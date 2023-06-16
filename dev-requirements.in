@@ -4,3 +4,4 @@ ipython
 isort
 black
 flake8
+selenium
