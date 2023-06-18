@@ -6,8 +6,11 @@ class ChatConsumer(AsyncJsonWebsocketConsumer):
         self.room_name = self.scope["url_route"]["kwargs"]["room_name"]
         self.room_group_name = f"chat_{self.room_name}"
 
-        await self.channel_layer.group_add(self.room_group_name, self.channel_name)
-        await self.accept()
+        if self.scope["user"].is_authenticated:
+            await self.channel_layer.group_add(self.room_group_name, self.channel_name)
+            await self.accept()
+        else:
+            await self.close()
 
     async def disconnect(self, close_code):
         await self.channel_layer.group_discard(self.room_group_name, self.channel_name)
