@@ -323,24 +323,6 @@ twisted[tls]==22.10.0 \
     --hash=sha256:32acbd40a94f5f46e7b42c109bfae2b302250945561783a8b7a059048f2d4d31 \
     --hash=sha256:86c55f712cc5ab6f6d64e02503352464f0400f66d4f079096d744080afcccbd0
     # via daphne
-twisted-iocpsupport==1.0.3 \
-    --hash=sha256:1bdccbb22199fc69fd7744d6d2dfd22d073c028c8611d994b41d2d2ad0e0f40d \
-    --hash=sha256:1dbfac706972bf9ec5ce1ddbc735d2ebba406ad363345df8751ffd5252aa1618 \
-    --hash=sha256:1ddfc5fa22ec6f913464b736b3f46e642237f17ac41be47eed6fa9bd52f5d0e0 \
-    --hash=sha256:1ea2c3fbdb739c95cc8b3355305cd593d2c9ec56d709207aa1a05d4d98671e85 \
-    --hash=sha256:3f39c41c0213a81a9ce0961e30d0d7650f371ad80f8d261007d15a2deb6d5be3 \
-    --hash=sha256:4f249d0baac836bb431d6fa0178be063a310136bc489465a831e3abd2d7acafd \
-    --hash=sha256:67bec1716eb8f466ef366bbf262e1467ecc9e20940111207663ac24049785bad \
-    --hash=sha256:6f8c433faaad5d53d30d1da6968d5a3730df415e2efb6864847267a9b51290cd \
-    --hash=sha256:7efcdfafb377f32db90f42bd5fc5bb32cd1e3637ee936cdaf3aff4f4786ab3bf \
-    --hash=sha256:8faceae553cfadc42ad791b1790e7cdecb7751102608c405217f6a26e877e0c5 \
-    --hash=sha256:98a6f16ab215f8c1446e9fc60aaed0ab7c746d566aa2f3492a23cea334e6bebb \
-    --hash=sha256:a379ef56a576c8090889f74441bc3822ca31ac82253cc61e8d50631bcb0c26d0 \
-    --hash=sha256:aaca8f30c3b7c80d27a33fe9fe0d0bac42b1b012ddc60f677175c30e1becc1f3 \
-    --hash=sha256:afb00801fdfbaccf0d0173a722626500023d4a19719ac9f129d1347a32e2fc66 \
-    --hash=sha256:db11c80054b52dbdea44d63d5474a44c9a6531882f0e2960268b15123088641a \
-    --hash=sha256:dff43136c33665c2d117a73706aef6f7d6433e5c4560332a118fe066b16b8695
-    # via twisted
 txaio==23.1.1 \
     --hash=sha256:aaea42f8aad50e0ecfb976130ada140797e9dcb85fad2cf72b0f37f8cefcb490 \
     --hash=sha256:f9a9216e976e5e3246dfd112ad7ad55ca915606b60b84a757ac769bd404ff704
@@ -351,12 +333,6 @@ typing-extensions==4.6.3 \
     # via
     #   psycopg
     #   twisted
-tzdata==2023.3 \
-    --hash=sha256:11ef1e08e54acb0d4f95bdb1be05da659673de4acbd21bf9c69e94cc5e907a3a \
-    --hash=sha256:7e65763eef3120314099b6939b5546db7adce1e7d6f2e179e3df563c70511eda
-    # via
-    #   django
-    #   psycopg
 zope-interface==6.0 \
     --hash=sha256:042f2381118b093714081fd82c98e3b189b68db38ee7d35b63c327c470ef8373 \
     --hash=sha256:0ec9653825f837fbddc4e4b603d90269b501486c11800d7c761eee7ce46d1bbb \
