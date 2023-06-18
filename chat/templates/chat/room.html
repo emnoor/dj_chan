@@ -3,6 +3,7 @@
 {% block title %}Chat Room | {{ block.super }}{% endblock title %}
 
 {% block content %}
+<div id="connection_status">Connecting...</div>
 <textarea id="chat-log" cols="100" rows="20"></textarea><br>
 <input id="chat-message-input" type="text" size="100"><br>
 <input id="chat-message-submit" type="button" value="Send">
@@ -23,7 +24,14 @@
         document.querySelector('#chat-log').value += (data.message + '\n');
     };
 
+    const statusDiv = document.querySelector('#connection_status');
+
+    chatSocket.onopen = function (e) {
+        statusDiv.innerHTML = "Connected";
+    }
+
     chatSocket.onclose = function (e) {
+        statusDiv.innerHTML = "Connection closed!";
         console.error('Chat socket closed unexpectedly');
     };
 
